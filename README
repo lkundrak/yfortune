@@ -1,0 +1,14 @@
+A simple Yammer application that exports contents of Yammer group to a file suitable
+for use with fortune command.
+
+My instance is deployed on OpenShift at http://yfortune-lr666.rhcloud.com/
+
+If you're going to hack on this, just fork it and fill in your App's credentials.
+To debug without being deployed on web, just fill in $token you'll obtain
+manually and perhaps $group_id and run directly from the shell.
+
+The rate limiting thing might be a bit fragile -- we have to be slow enough to avoid
+excessive delays, but fast enough not to trigger an OpenShift gateway timeout.
+
+Love,
+Lubo
